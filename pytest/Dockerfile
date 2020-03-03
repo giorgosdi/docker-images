@@ -4,7 +4,8 @@ RUN apk update \
     && apk upgrade
 
 RUN apk add git \
-    	alpine-sdk
+    	alpine-sdk \
+	libffi
 
 RUN pip install pytest-cov
 
