@@ -5,7 +5,8 @@ RUN apk update \
 
 RUN apk add git \
     	alpine-sdk \
-	libffi
+	libffi-dev \
+	openssl-dev
 
 RUN pip install pytest-cov
 
